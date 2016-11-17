@@ -13,6 +13,9 @@
 		74AEF5B61DDCBD5C0069E92D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AEF5B41DDCBD5C0069E92D /* Main.storyboard */; };
 		74AEF5B81DDCBD5C0069E92D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AEF5B71DDCBD5C0069E92D /* Assets.xcassets */; };
 		74AEF5BB1DDCBD5C0069E92D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AEF5B91DDCBD5C0069E92D /* LaunchScreen.storyboard */; };
+		74AEF5C41DDCC0320069E92D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AEF5C31DDCC0320069E92D /* CollectionViewCell.m */; };
+		74AEF5E81DDCE6AF0069E92D /* ImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AEF5E71DDCE6AF0069E92D /* ImageObject.m */; };
+		74D6546F1DDD288000BA9838 /* HeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D6546E1DDD288000BA9838 /* HeaderCollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		74AEF5B71DDCBD5C0069E92D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74AEF5BA1DDCBD5C0069E92D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74AEF5BC1DDCBD5C0069E92D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74AEF5C21DDCC0320069E92D /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		74AEF5C31DDCC0320069E92D /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		74AEF5E61DDCE6AF0069E92D /* ImageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageObject.h; sourceTree = "<group>"; };
+		74AEF5E71DDCE6AF0069E92D /* ImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageObject.m; sourceTree = "<group>"; };
+		74D6546D1DDD288000BA9838 /* HeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		74D6546E1DDD288000BA9838 /* HeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderCollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,8 @@
 				74AEF5B11DDCBD5C0069E92D /* ViewController.h */,
 				74AEF5B21DDCBD5C0069E92D /* ViewController.m */,
 				74AEF5B41DDCBD5C0069E92D /* Main.storyboard */,
+				74D6546D1DDD288000BA9838 /* HeaderCollectionReusableView.h */,
+				74D6546E1DDD288000BA9838 /* HeaderCollectionReusableView.m */,
 				74AEF5B71DDCBD5C0069E92D /* Assets.xcassets */,
 				74AEF5B91DDCBD5C0069E92D /* LaunchScreen.storyboard */,
 				74AEF5BC1DDCBD5C0069E92D /* Info.plist */,
@@ -74,6 +85,10 @@
 		74AEF5AB1DDCBD5C0069E92D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74AEF5E61DDCE6AF0069E92D /* ImageObject.h */,
+				74AEF5E71DDCE6AF0069E92D /* ImageObject.m */,
+				74AEF5C21DDCC0320069E92D /* CollectionViewCell.h */,
+				74AEF5C31DDCC0320069E92D /* CollectionViewCell.m */,
 				74AEF5AC1DDCBD5C0069E92D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -151,8 +166,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D6546F1DDD288000BA9838 /* HeaderCollectionReusableView.m in Sources */,
+				74AEF5E81DDCE6AF0069E92D /* ImageObject.m in Sources */,
 				74AEF5B31DDCBD5C0069E92D /* ViewController.m in Sources */,
 				74AEF5B01DDCBD5C0069E92D /* AppDelegate.m in Sources */,
+				74AEF5C41DDCC0320069E92D /* CollectionViewCell.m in Sources */,
 				74AEF5AD1DDCBD5C0069E92D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E44M545Q67;
 				INFOPLIST_FILE = InstaKilo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ta.InstaKilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E44M545Q67;
 				INFOPLIST_FILE = InstaKilo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ta.InstaKilo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +332,7 @@
 				74AEF5C11DDCBD5C0069E92D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
