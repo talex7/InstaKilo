@@ -10,6 +10,7 @@
 #import "CollectionViewCell.h"
 #import "ImageObject.h"
 #import "HeaderCollectionReusableView.h"
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UISwitch *sortSwitch;
